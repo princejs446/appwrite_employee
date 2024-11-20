@@ -2,7 +2,7 @@ import 'package:appwrite/models.dart';
 
 class Note {
   final String name;
-  final int age;
+  final String age;
   final String location;
   
 

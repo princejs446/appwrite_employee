@@ -44,6 +44,7 @@ class _EmployeeHomescreen extends State<EmployeeHomescreen> {
         age.isNotEmpty &&
         location.isNotEmpty) {
       try {
+       
         await _appwriteService.addNote(name, age, location);
         namecontroller.clear();
         agecontroller.clear();
@@ -146,7 +147,7 @@ class _EmployeeHomescreen extends State<EmployeeHomescreen> {
                                 Text(notes.name),
                                 IconButton(
                                   icon: Icon(Icons.delete),
-                                  onPressed: () => _deleteNote,
+                                  onPressed: () => _deleteNote
                                 ),
                               ],
                             ),
